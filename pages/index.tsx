@@ -2,9 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import RoundButton from "../components/buttons/RoundButton";
+import RoundButton from "../components/buttons/Button";
 import Footer from "../components/footer/Footer";
 import Banner from "../components/banner/Banner";
+import Header from "../components/header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,51 +18,25 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
+      <Banner />
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p className="font-sans text-xl font-bold">BlueRoof</p>
-          <div className="flex items-center justify-center gap-4">
-            <a className="font-sans text-base font-semibold">Home</a>
-            <a className="font-sans text-base font-semibold">BlueRoof</a>
-            <a className="font-sans text-base font-semibold">Results</a>
-          </div>
-        </div>
-
-        <div className="md:max-w-1/2 sm:max-w-full">
-          <div className={styles.center}>
-            <div className={styles.thirteen}>
-              <div>
-                <div className="flex flex-col items-center justify-center gap-4">
-                  <text className="font-sans font-bold text-center md:text-4xl sm:text-lg ">
-                    Trust. Knowledge. Experience.
-                  </text>
-                  <text className="items-center justify-center font-sans text-center md:text-base sm:text-xs ">
-                    No more VIP Fees . Just Open account Using our Patner
-                    Broker, Boom you welcome to the Blue Roof Trading Group Just
-                    Signup Below
-                  </text>
-                  <RoundButton text="Sign Up Now" onClick={() => {}} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className={styles.grid}>
           {[1, 2, 3, 4, 5, 6, 7, 8].map((item, i) => (
-            <a href="#" className={styles.card} key={i}>
-              <Image
-                src="/images/shot.jpg"
-                alt="Picture of the author"
-                width={250}
-                height={350}
-                className="shadow-lg rounded-2xl"
-              />
-            </a>
+            <div className={styles.center} key={i}>
+              <div className={styles.thirteen}>
+                <Image
+                  src="/images/shot.jpg"
+                  alt="Picture of the author"
+                  width={250}
+                  height={350}
+                  className="shadow-lg rounded-2xl"
+                />
+              </div>
+            </div>
           ))}
         </div>
       </main>
-      <Banner />
       <Footer />
     </>
   );
