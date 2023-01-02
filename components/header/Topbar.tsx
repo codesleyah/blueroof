@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Topbar() {
   return (
-    <div className="flex items-center justify-between h-10 px-12 bg-blue-900">
+    <div className="flex items-center justify-between h-10 px-12 bg-regal-blue">
       <div className="flex items-center justify-center gap-4">
         <Link href="https://t.me/volatilityplus">
           <FaTelegram className="text-2xl text-white" />
@@ -21,3 +21,5 @@ export default function Topbar() {
     </div>
   );
 }
+
+

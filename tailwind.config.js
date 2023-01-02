@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "regal-blue": "#243c5a",
-        "transparent-white": "rgba(255, 255, 255, 0.3)",
+        "regal-blue": "#001128",
+        "transparent-white": "#0011287d",
       },
       backgroundImage: {
-        hero: "url('/images/gg.png')",
+        hero: "url('/images/blueroofbg.png')",
       },
     },
   },
