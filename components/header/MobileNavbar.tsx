@@ -9,7 +9,7 @@ export default function MobileNavbar() {
       <Link href="#results" className="font-sans text-base font-semibold">
         Results
       </Link>
-      <Link href="https://t.me/volatilityplus" className="font-sans text-base font-semibold">Contact</Link>
+      <Link href="https://t.me/theblueroof" className="font-sans text-base font-semibold">Contact</Link>
     </div>
   );
 }
